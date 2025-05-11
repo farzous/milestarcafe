@@ -385,7 +385,7 @@ export default function AdminPage() {
                           <td className="py-3 px-4 hidden md:table-cell">
                             {format(new Date(order.createdAt), "MMM d, yyyy")}
                           </td>
-                          <td className="py-3 px-4 hidden md:table-cell">${order.total.toFixed(2)}</td>
+                          <td className="py-3 px-4 hidden md:table-cell">₹{order.total}</td>
                           <td className="py-3 px-4">
                             <span className={`px-2 py-1 ${getStatusColor(order.status)} rounded-full text-xs font-medium`}>
                               {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
@@ -576,8 +576,8 @@ export default function AdminPage() {
                       <tr key={item.id} className="border-t">
                         <td className="py-2 px-3">{item.name}</td>
                         <td className="py-2 px-3 text-center">{item.quantity}</td>
-                        <td className="py-2 px-3 text-right">${item.price.toFixed(2)}</td>
-                        <td className="py-2 px-3 text-right">${(item.price * item.quantity).toFixed(2)}</td>
+                        <td className="py-2 px-3 text-right">₹{item.price}</td>
+                        <td className="py-2 px-3 text-right">₹{(item.price * item.quantity)}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -587,23 +587,23 @@ export default function AdminPage() {
               <div>
                 <div className="flex justify-between text-gray-600 text-sm">
                   <span>Subtotal:</span>
-                  <span>${selectedOrder.order.subtotal.toFixed(2)}</span>
+                  <span>₹{selectedOrder.order.subtotal}</span>
                 </div>
                 <div className="flex justify-between text-gray-600 text-sm">
                   <span>Tax (7%):</span>
-                  <span>${selectedOrder.order.tax.toFixed(2)}</span>
+                  <span>₹{selectedOrder.order.tax}</span>
                 </div>
                 <div className="flex justify-between font-medium text-gray-800 mt-1">
                   <span>Total:</span>
-                  <span>${selectedOrder.order.total.toFixed(2)}</span>
+                  <span>₹{selectedOrder.order.total}</span>
                 </div>
               </div>
               
               <Button
-                className="w-full mt-6"
+                className="w-full mt-6 font-semibold py-3 transition-all hover:scale-105"
                 onClick={() => setOrderDetailsVisible(false)}
               >
-                Close
+                CLOSE
               </Button>
             </div>
           </FormOverlay>
