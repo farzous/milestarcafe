@@ -24,8 +24,8 @@ export default function HomePage() {
             <h1 className="text-white font-bold text-4xl md:text-5xl mb-4">Welcome to Milestar Café</h1>
             <p className="text-white text-lg md:text-xl mb-8">Delicious food, cozy atmosphere, unforgettable experience</p>
             <Link href="/menu">
-              <Button className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md text-lg transition-all duration-300">
-                Order Now
+              <Button className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-10 rounded-md text-xl shadow-xl transition-all duration-300 hover:scale-110 animate-pulse">
+                ORDER NOW
               </Button>
             </Link>
           </div>
@@ -106,9 +106,9 @@ export default function HomePage() {
                       <span className="text-accent font-semibold">₹{item.price}</span>
                     </div>
                     <p className="text-gray-600 text-sm mb-4">{item.description}</p>
-                    <Link href="/menu">
-                      <Button className="w-full bg-primary hover:bg-primary/90 text-white py-2 rounded-md font-medium transition-colors">
-                        Order Now
+                    <Link href="/menu" className="w-full block">
+                      <Button className="w-full bg-accent hover:bg-accent/90 text-white py-3 rounded-md font-bold text-lg shadow-lg transition-all hover:scale-105">
+                        ORDER NOW
                       </Button>
                     </Link>
                   </CardContent>

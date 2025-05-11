@@ -118,15 +118,15 @@ export default function MenuPage() {
                   <p className="text-gray-600 text-sm mb-4">{item.description}</p>
                   {user ? (
                     <Button 
-                      className="w-full bg-primary hover:bg-primary/90 text-white"
+                      className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-3 text-lg shadow-md transition-all hover:scale-105"
                       onClick={() => handleAddToCart(item)}
                     >
-                      Add to Order
+                      ADD TO ORDER
                     </Button>
                   ) : (
-                    <Link href="/auth">
-                      <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                        Login to Order
+                    <Link href="/auth" className="w-full block">
+                      <Button className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-3 text-lg shadow-md transition-all hover:scale-105">
+                        LOGIN TO ORDER
                       </Button>
                     </Link>
                   )}
