@@ -235,16 +235,16 @@ export default function OrderPage() {
                   
                   <Button
                     type="submit"
-                    className="w-full bg-accent hover:bg-accent/90 text-white mt-4"
+                    className="w-full bg-accent hover:bg-accent/90 text-white mt-4 font-bold py-4 text-xl shadow-lg transition-all hover:scale-105"
                     disabled={orderMutation.isPending || cartItems.length === 0}
                   >
                     {orderMutation.isPending ? (
                       <>
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Processing...
+                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                        PROCESSING...
                       </>
                     ) : (
-                      "Place Order"
+                      "PLACE ORDER"
                     )}
                   </Button>
                 </form>
@@ -266,9 +266,9 @@ export default function OrderPage() {
             <p className="text-gray-600 mb-6">Your order has been received and is being prepared.</p>
             <p className="font-medium text-gray-800 mb-6">Order #: {orderId}</p>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
-              <Link href="/orders">
-                <Button className="bg-primary hover:bg-primary/90 text-white w-full">
-                  View My Orders
+              <Link href="/orders" className="w-full block">
+                <Button className="bg-accent hover:bg-accent/90 text-white w-full font-semibold py-3 shadow-md transition-all hover:scale-105">
+                  VIEW MY ORDERS
                 </Button>
               </Link>
               <Button 
