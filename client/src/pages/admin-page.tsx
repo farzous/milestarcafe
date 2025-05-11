@@ -290,7 +290,7 @@ export default function AdminPage() {
                             {item.category}
                           </td>
                           <td className="py-3 px-4 hidden md:table-cell">
-                            ${item.price.toFixed(2)}
+                            ₹{item.price}
                           </td>
                           <td className="py-3 px-4 text-right">
                             <Button 

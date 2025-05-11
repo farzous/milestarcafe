@@ -80,15 +80,15 @@ export default function OrdersPage() {
                   <div className="border-t pt-3">
                     <div className="flex justify-between text-gray-600 text-sm">
                       <span>Subtotal:</span>
-                      <span>${order.subtotal.toFixed(2)}</span>
+                      <span>₹{order.subtotal}</span>
                     </div>
                     <div className="flex justify-between text-gray-600 text-sm">
                       <span>Tax:</span>
-                      <span>${order.tax.toFixed(2)}</span>
+                      <span>₹{order.tax}</span>
                     </div>
                     <div className="flex justify-between font-medium text-gray-800 mt-1">
                       <span>Total:</span>
-                      <span>${order.total.toFixed(2)}</span>
+                      <span>₹{order.total}</span>
                     </div>
                   </div>
                   

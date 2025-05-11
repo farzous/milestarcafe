@@ -189,49 +189,49 @@ export class MemStorage implements IStorage {
       {
         name: "Classic Cheeseburger",
         description: "Juicy beef patty with melted cheese, fresh vegetables, and our special sauce.",
-        price: 9.99,
+        price: 399,
         imageUrl: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
         category: "food"
       },
       {
         name: "Veggie Pasta Salad",
         description: "Fresh pasta with mixed vegetables, herbs, and light vinaigrette dressing.",
-        price: 8.49,
+        price: 349,
         imageUrl: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
         category: "food"
       },
       {
         name: "Crispy Chicken Sandwich",
         description: "Crispy fried chicken breast with lettuce, tomato, and mayo on a toasted bun.",
-        price: 8.99,
+        price: 369,
         imageUrl: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
         category: "food"
       },
       {
         name: "Berry Smoothie",
         description: "Refreshing blend of mixed berries, yogurt, and honey.",
-        price: 5.99,
+        price: 249,
         imageUrl: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
         category: "juice"
       },
       {
         name: "Fresh Orange Juice",
         description: "Freshly squeezed orange juice, no added sugar or preservatives.",
-        price: 4.99,
+        price: 199,
         imageUrl: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
         category: "juice"
       },
       {
         name: "Cafe Latte",
         description: "Espresso with steamed milk and a light layer of foam.",
-        price: 4.49,
+        price: 179,
         imageUrl: "https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
         category: "beverage"
       },
       {
         name: "Hot Chocolate",
         description: "Rich and creamy hot chocolate topped with whipped cream.",
-        price: 3.99,
+        price: 159,
         imageUrl: "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
         category: "beverage"
       }

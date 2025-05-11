@@ -123,7 +123,7 @@ export default function OrderPage() {
                         <div key={item.id} className="flex items-center py-4 border-b">
                           <div className="flex-grow">
                             <h4 className="font-medium text-gray-800">{item.name}</h4>
-                            <span className="text-accent">${item.price.toFixed(2)}</span>
+                            <span className="text-accent">₹{item.price}</span>
                           </div>
                           
                           <div className="flex items-center">
@@ -160,15 +160,15 @@ export default function OrderPage() {
                       <div className="pt-4">
                         <div className="flex justify-between py-2 text-gray-600">
                           <span>Subtotal:</span>
-                          <span>${cartSubtotal.toFixed(2)}</span>
+                          <span>₹{cartSubtotal}</span>
                         </div>
                         <div className="flex justify-between py-2 text-gray-600 border-b border-gray-200">
                           <span>Tax (7%):</span>
-                          <span>${cartTax.toFixed(2)}</span>
+                          <span>₹{cartTax}</span>
                         </div>
                         <div className="flex justify-between py-3 font-semibold text-lg">
                           <span>Total:</span>
-                          <span>${cartTotal.toFixed(2)}</span>
+                          <span>₹{cartTotal}</span>
                         </div>
                       </div>
                     </div>

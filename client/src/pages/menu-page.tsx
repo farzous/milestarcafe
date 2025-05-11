@@ -113,7 +113,7 @@ export default function MenuPage() {
                 <CardContent className="p-4">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="font-semibold text-lg">{item.name}</h3>
-                    <span className="text-accent font-semibold">${item.price.toFixed(2)}</span>
+                    <span className="text-accent font-semibold">₹{item.price}</span>
                   </div>
                   <p className="text-gray-600 text-sm mb-4">{item.description}</p>
                   {user ? (
